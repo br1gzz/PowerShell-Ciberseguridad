@@ -1,3 +1,5 @@
+#Editado por Bruno GonzÃ¡lez el 20/08/2025
+
 function Validar-Archivo {
     param (
         [Parameter(Mandatory=$true)]
@@ -16,11 +18,11 @@ function Validar-Archivo {
         return "Error: $_"
     }
     finally {
-        Write-Host "Validación finalizada para: $Ruta" -ForegroundColor Cyan
+        Write-Host "Validaciï¿½n finalizada para: $Ruta" -ForegroundColor Cyan
     }
 }
 
-# Prueba de la función
+# Prueba de la funciï¿½n
 Validar-Archivo -Ruta 
-#Asegúrate de crear un archivo txt con el nombre archivo en el Escritorio
+#Asegï¿½rate de crear un archivo txt con el nombre archivo en el Escritorio
 Validar-Archivo -Ruta "$env:USERPROFILE\Escritorio\archivo.txt"
